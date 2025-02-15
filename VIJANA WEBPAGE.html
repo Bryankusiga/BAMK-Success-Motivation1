@@ -30,18 +30,29 @@
     flex-wrap: wrap; 
   }
   .container1 {
-    display: flex;
-    justify-content: center;
+    display: grid;
+   gap: 20px;
     flex-wrap: wrap;
-    
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
   }
-  .left, .right {
-padding: 20px;
-border: 1px solid;
-background-color: bisque;
-border-radius: 20px;
+    .left,.right{
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border: 5px solid rebeccapurple;
+    width: 50%;
+    height: auto;
   }
- 
+  .left, {
+
+    border: 5px solid rebeccapurple;
+float: .left;
+  }
+  .right {
+    border: 5px solid rebeccapurple;
+
+float: right;
+  }
   .logo{
     width: 15%;
     max-height: 5%;
@@ -53,21 +64,23 @@ border-radius: 20px;
   
   }
   .box {
-    background-color: #e6d8d2;
-  padding: 20px;
+    background-color: #b14212;
+  padding: 2%;
   border-radius: 10px;
-  box-shadow: 0 4px 34px rgba(5, 7, 165, 0.3);
-
-
+  box-shadow: 4px 4% 34px rgba(5, 7, 165, 0.3);
+  }
+  textarea{
+   grid-row-start: auto;
+   column-width: 10;
   }
   .form {
   
-    background-colr: #dee4de;
-  padding: 20px;
-  border-radius: 10px;
-  box-sadow: 0 4px 8px rgba(117, 8, 8, 0.3);
+    background-color: #dee4de;
+  padding: 2%;
+  border-radius: 3%;
+  box-shadow: 0 4px 8px rgba(117, 8, 8, 0.3);
   max-width: 100%;
-  margin-right: 40px;
+  margin: 3%;
   }
 
 h1 {
@@ -75,10 +88,10 @@ h1 {
  
   color: rgb(228, 228, 240);
   border: 9px solid rgb(72, 7, 7);
-  border-radius: 70px;
+  border-radius: 50px;
   text-shadow: 4px;
   word-spacing: 10px;
-  padding: 15px;
+  padding: 2%;
   text-align: center;
   text-transform: uppercase;
 }
@@ -87,6 +100,12 @@ h1 {
   font-weight: 900;
  }
 body {
+  background-color: rgb(216, 209, 209);
+  background-image: url("Academy logo1.webp")
+ background-repeat: no-repeat;
+ background-position: right top;
+ background-attachment: fixed;
+ background-size: cover;
   font-style: inherit;
   word-spacing: 2px;
   box-shadow: 0 4px 8px rgba(131, 112, 112, 0.3);
@@ -111,7 +130,7 @@ hr {
       color: white;
       padding: 10px;
       position: fixed;
-      
+      margin: none;
      }
       .conclusion{
         text-align: center;
@@ -128,8 +147,10 @@ hr {
       }
       .image{
         border-radius: 3%;
-  width: 100%;
+  width: 90%;
   height: 100%;
+  border: 6px double #cdf005;
+  float: center;
       }
     
  @media screen and (max-width: 767px) {
@@ -154,19 +175,19 @@ hr {
     width: 100%;
     height: auto;
     grid-template-columns:  1fr  1fr ;
+
    }
 
   }
  img{
   border-radius: 9%;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
+  border: 4px solid gold;
  }
- .left{
-  float: left;
- }
+
 </style>
-<div class="container">
+
 <p>
 <h2 id="top">
   Karibu katika BAMK Academy</h2></p>
@@ -195,8 +216,13 @@ hr {
           kufanikiwa.
          
         </p>
-        <img src="work hard.jpg" class="right">
-        <img src="kazi.jpg" class="left">
+        <div  class="container1">
+        <img src="work hard.jpg" >
+     
+    
+        <img src="kazi.jpg" >
+      
+      </div>
         <br>
         <br>
         <br>
@@ -217,8 +243,10 @@ hr {
        Hii ni njia nzuri ya kujenga sifa yako kwenye mitandao 
        ya kijamii na kupata wafuasi.
       </p>
-      <img src="ubunifu.png" class="right">
-      <img src="kusoma.jpg" class="left">
+      <div  class="container1">
+      <img src="ubunifu.png" >
+      <img src="kusoma.jpg" >
+      </div>
         <br>
         <br>
         <br>
@@ -237,8 +265,10 @@ hr {
          wazi na yanafungua njia kwa wengine, 
          wengi watafuata kwa hamu kuona mafanikio yako.
         </p>
-        <img src="visual plans.jpg" class="right">
-        <img src="tageti ya mafanikio.webp" class="left">
+        <div  class="container1">
+        <img src="visual plans.jpg" >
+        <img src="tageti ya mafanikio.webp">
+        </div>
         <br>
         <br>
         <br>
@@ -258,8 +288,10 @@ hr {
          mtendaji na mtu wa kujitegemea, jambo ambalo 
          linaweza kuvutia wafuasi wengi.
         </p>
-        <img src="mti pesa.jpg" class="right">
-        <img src="njia ya mafanikio.jpg" class="left">
+        <div  class="container1">
+        <img src="mti pesa.jpg" >
+        <img src="njia ya mafanikio.jpg" >
+        </div>
         <br>
         <br>
         <br>
@@ -279,8 +311,10 @@ hr {
          ana uhusiano mzuri na wengine na anajali maendeleo 
          ya jamii yake.
         </p>
-        <img src="Network-watu.png" class="right">
-        <img src="teamwork.jpg" class="left">
+        <div  class="container1">
+        <img src="Network-watu.png">
+        <img src="teamwork.jpg" >
+        </div>
         <br>
         <br>
         <br>
@@ -300,8 +334,10 @@ hr {
             na nafasi kubwa ya kuvutia watu na kuwa 
              wafuasi wa kudumu.
             </p>
-            <img src="Mitazamo yako.png" class="right">
-            <img src="good house inside.jpg" class="left">
+            <div  class="container1">
+            <img src="Mitazamo yako.png" >
+            <img src="good house inside.jpg" >
+            </div>
             <br>
             <br>
             <br>
@@ -321,8 +357,10 @@ hr {
           kipekee kutakusaidia kuvutia wafuasi wengi na 
           kukuza mapato yako kupitia matangazo na udhamini.
         </p>
-        <img src="AL.webp" class="right">
-        <img src="vitabu.jpg" class="left">
+        <div  class="container1">
+        <img src="AL.webp" >
+        <img src="vitabu.jpg" >
+        </div>
         <br>
         <br>
         <br>
@@ -341,8 +379,10 @@ hr {
           na kuona mafanikio yako, watahamasika kushiriki na 
           kufuata yale unayofanya.
         </p>
-        <img src="Youth.jpg" class="right">
-        <img src="kutoa support.jpg" class="left">
+        <div  class="container1">
+        <img src="Youth.jpg">
+        <img src="kutoa support.jpg" >
+        </div>
         <br>
         <br>
         <br>
@@ -361,8 +401,10 @@ hr {
         maslahi ya wengine. Uaminifu utakuza jamii
          inayokufuatilia na kusaidia mafanikio yako.
       </p>
-      <img src="maua njia.jpg" class="right">
-      <img src="watu & nyasi.jpg" class="left">
+      <div  class="container1">
+      <img src="maua njia.jpg" >
+      <img src="watu & nyasi.jpg" >
+      </div>
        <br>
         <br>
         <br>
@@ -385,8 +427,10 @@ hr {
        wafuasi wengi na kuvutia matangazo au udhamini,
         hivyo kuweza kupata pesa kutoka kwenye tovuti yako.
       </p>
-      <img src="mazoezi.png" class="right">
-      <img src="pumzika.jpg" class="left">
+      <div  class="container1">
+      <img src="mazoezi.png ">
+      <img src="pumzika.jpg" >
+    </div>
       <br>
       <br>
       <br>
@@ -432,7 +476,7 @@ Send to my email:
   <br>
   What is your suggetions about this web site?
   <br>
- <textarea name="Comment" cols="50" rows="10" placeholder="Enter your suggestion here"></textarea>
+ <textarea name="Comment" cols="30%" rows="10%" placeholder="Enter your suggestion here"></textarea>
 </p>
 </form>
 
