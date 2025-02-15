@@ -36,6 +36,20 @@
     grid-template-columns: 1fr 1fr;
     padding: 20px;
   }
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    grid: 20px;
+    margin: 10px;
+  }
+  .slogan{
+    background-color: #daae9b;
+    border: 5px double rgb(5, 92, 10);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 0px 20px;
+  }
     .left,.right{
     border: 1px solid #ddd;
     background-color: #f9f9f9;
@@ -54,11 +68,9 @@ float: .left;
 float: right;
   }
   .logo{
-    width: 15%;
-    max-height: 5%;
   border-radius: 100px;
   float: right;
-  padding: 10px;
+  padding: 5px;
   border: 2px solid rgb(155, 155, 235);
   text-align: center;
   
@@ -101,21 +113,35 @@ h1 {
  }
 body {
   background-color: rgb(216, 209, 209);
-  background-image: url("Academy logo1.webp")
  background-repeat: no-repeat;
  background-position: right top;
  background-attachment: fixed;
  background-size: cover;
-  font-style: inherit;
+ font-style: inherit;
   word-spacing: 2px;
-  box-shadow: 0 4px 8px rgba(131, 112, 112, 0.3);
+  box-shadow: 5px 9px 10px rgba(75, 10, 10, 0.897);
   margin: 30;
   padding: 20;
   border-radius: 10px;
 }
+p {
+  font-style: initial;
+  font: optiona;
+
+  font-weight: 300px;
+  color: rgba(12, 12, 12, 0.932);
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 10px;
+  
+}
 h3 {
-  color: rgba(53, 7, 235, 1);
+  color: rgb(9, 6, 141);
   word-spacing: 3px;
+  background: #959980;
+  border-radius: 7px;
+  padding: 10px;
+  font-weight: 900px;
 }
 hr {
   transform: none;
@@ -146,11 +172,12 @@ hr {
         padding: 10px;
       }
       .image{
-        border-radius: 3%;
-  width: 90%;
-  height: 100%;
-  border: 6px double #cdf005;
-  float: center;
+        border-radius: 10%;
+ height: 40%;
+ width: 30%;
+  border: 6px double #3f4905;
+ float: right;
+
       }
     
  @media screen and (max-width: 767px) {
@@ -183,29 +210,76 @@ hr {
   border-radius: 9%;
   width: 100%;
   height: 100%;
-  border: 4px solid gold;
+  border: 2px solid gold;
+  margin: none;
+ }
+ .right1 {
+  float: right;
  }
 
 </style>
-
-<p>
-<h2 id="top">
-  Karibu katika BAMK Academy</h2></p>
-  <hr>
-  <a href="Academy logo.webp" class="logo">My Logo</a>
 </head>
+<p>
+<h2 id="top">   
+    <image src="Academy logo10.png" class="image" ></image>
+  Karibu katika BAMK Academy<br><br>
+  <i><small>GREAT IDEAS, SMART STRATEGIES,
+     BRIGHTER FUTURE</small></i>
+</h2>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<b style="color: #680da5;">
+<big>BAMK</big> = Bryan Aman Martin Kusiga</b><br></p>
+  <hr>
+  
+  <a href="Academy logo.webp" class="logo" class="left">My Logo click here</a>
 <hr>
-<image src="BAMK graduu.jpg" class="image"></image>
+  <br>
+ 
+   
+<div class="slogan">
+    <p><b style="color: rgb(5, 90, 19);"><big> SLOGAN</big></b><br>
+<i>GREAT IDEAS, SMART STRATEGIES, BRIGHTER FUTURE</i>
+  <br>
+<br>
+<ul>
+    <li><b><strong> Great ideas(Mawazo makubwa):</strong></b><br>
+      Kuweza kufikiri kwa ubunifu na
+       kutoa mawazo yenye nguvu ni mwanzo
+        wa kia mafanikio.
+    </li>
+    <br>
+    <li><b><strong>Smart strategies(Mikakati smart):</strong></b><br>
+    Kutumia Mikakati ya akili na inayolenga 
+    lengo ni muhimu ili kufikia matokeo bora.
+    </li>
+    <br>
+    <li><b><strong>Brighter future(Maisha bora ya kesho):</strong></b><br>
+    Kwa kutumia mawazo na mikakati sahihi, tunajiandaa
+     kwa maisha bora na mafanikio makubwa siku zijazo.
+    </li>
+
+</ul>
+</p>
+</div>
+ 
 <hr>
+
 <body>
     <h1><b><big id="top">
         Hapa ni mambo kumi ya kuzingatia kwa kijana.
       </big></b></h1>
       <br>
+      <hr>
       <b><big><h3>
       1. Fanya Kazi Kwa Bidii na Kujitolea.
       </b></big></h3>
-      <p>
+      <p> 
       Kujitolea na kufanya kazi kwa bidii ni msingi wa 
       mafanikio yoyote. Kwa kijana, ni muhimu kuzingatia
        malengo yako na kuwekeza muda na juhudi katika
@@ -214,21 +288,11 @@ hr {
         Hii inajenga uaminifu kwa wafuasi wako kwani wanajua
          kwamba wewe ni mtu anayejiamini na anayeweza
           kufanikiwa.
-         
         </p>
         <div  class="container1">
         <img src="work hard.jpg" >
-     
-    
         <img src="kazi.jpg" >
-      
-      </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        </div>
         <hr>
       <b><big><h3>
       2. Fanya Utafiti na Kujifunza Kila Siku.
@@ -247,11 +311,7 @@ hr {
       <img src="ubunifu.png" >
       <img src="kusoma.jpg" >
       </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        
         <hr>
       <b><big><h3>
       3. Buni Mipango Bora na Kuwa Na Malengo.
@@ -269,11 +329,7 @@ hr {
         <img src="visual plans.jpg" >
         <img src="tageti ya mafanikio.webp">
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        
         <hr>
       <b><big><h3>
       4. Tafuta Vyanzo Vipya vya Mapato
@@ -292,11 +348,7 @@ hr {
         <img src="mti pesa.jpg" >
         <img src="njia ya mafanikio.jpg" >
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        
         <hr>
       <b><big><h3>
       5. Jenga Mtandao na Uhusiano Bora.
@@ -315,11 +367,7 @@ hr {
         <img src="Network-watu.png">
         <img src="teamwork.jpg" >
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        
         <hr>
         <b><big><h3>
       6. Jitahidi Kuwa na Mtindo wa Kipekee
@@ -338,11 +386,7 @@ hr {
             <img src="Mitazamo yako.png" >
             <img src="good house inside.jpg" >
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+           
             <hr>
       <b><big><h3>
       7. Jifunze na Kubuni Teknolojia.
@@ -361,11 +405,7 @@ hr {
         <img src="AL.webp" >
         <img src="vitabu.jpg" >
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+      
         <hr>
         <b><big><h3>
       8. Kuwa Mshirika wa Wengine na Kuwasaidia Wengine.
@@ -383,11 +423,7 @@ hr {
         <img src="Youth.jpg">
         <img src="kutoa support.jpg" >
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+      
         <hr>
         <b><big><h3>
       9. Kuwa Mwangavu na Uaminifu.
@@ -406,10 +442,7 @@ hr {
       <img src="watu & nyasi.jpg" >
       </div>
        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+       
         <hr>
         <b><big><h3>
       10. Jali Afya Yako na Uwepo wa Muda wa Kupumzika.
@@ -431,10 +464,7 @@ hr {
       <img src="mazoezi.png ">
       <img src="pumzika.jpg" >
     </div>
-      <br>
-      <br>
-      <br>
-      <br>
+     
       <hr>
       <a href="#top">go top</a>
 
@@ -467,7 +497,7 @@ hr {
    <br>
    <br>
 Send to my email:
-<input type="submit" name="Subcribe" value="Send" >
+<input type="submit" name="Subcribe" value="Send"  >
 
 <br>
 <br>
