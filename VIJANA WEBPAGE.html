@@ -8,17 +8,28 @@
   <title>BAMK VIJANA Website</title>
 
   <title>BAMK Vijana Website</title>
-
+<div class="color">
   <a href="mailto:kusigabryan7@gmail.com"target="_blank">click here to view BAMK</a>
-
+  
+  <div  class="container4">
+    
+      
+      <div class="left">
   <h4>NEWS</h4>
   <ul>
     <li><a href="https://www.bbc.com/"target="_blank">BBC</a></li>
     <li><a href="https://www.milladayo/"targat="_blank">Millad Ayo</a></li>
     <li><a href="https://www.bing.com/"target="_blank">Bing</a></li>
-    
+  
   </ul>
-
+</div>
+<div class="right">
+  <div class="header">
+    <h5><b><big><span>Engneer</span><br>
+       <span>BAMK</span></big></b></h5>
+      </div>
+    </div>
+</div>
 <br>
 <br>
 <a href="mailto:kusigabryan7@gmail.com">Email me</a>
@@ -31,7 +42,18 @@
 <br>
 
 <style>
-  
+  .color{
+    background: linear-gradient(#d3e2dd 0%, #ce7d6b 49%, #dcdbff 100%); 
+  }
+    .container4 {
+    display: grid;
+   gap: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    grid-template-columns: 1fr 1fr;
+    padding: 0px;
+    }
   .container {
     display: flex;
     gap: 2%;
@@ -66,23 +88,15 @@
     margin: 10px;
     padding: 0px 20px;
   }
-    .left,.right{
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
-    border: 5px solid rebeccapurple;
-    width: 50%;
-    height: auto;
+    .right {
+      float: right;
   }
-  .left, {
+  .left {
+float: left;
+  }
 
-    border: 5px solid rebeccapurple;
-float: .left;
-  }
-  .right {
-    border: 5px solid rebeccapurple;
+    
 
-float: right;
-  }
   .logo{
   border-radius: 100px;
   float: right;
@@ -128,7 +142,7 @@ h1 {
   font-weight: 900;
  }
 body {
-  background-color: rgb(216, 209, 209);
+  background: linear-gradient(#eefff9 0%, #ffccc1 49%, #dcdbff 100%);
  background-repeat: no-repeat;
  background-position: right top;
  background-attachment: fixed;
@@ -195,7 +209,7 @@ hr {
 
       }
     
- @media screen and (max-width: 767px) {
+ @media screen and (max-width: 968px) {
   body {
     font-size: 16px;
   }
@@ -209,6 +223,24 @@ hr {
     h3 {
     font-size: 1.7rem;
   }
+  .header h5 span{
+    background: linear-gradient(#17ad3c,rgb(179, 9, 9), #2c0379);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0%;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+}
+  .container4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: px;
+    float: left;
+  
+    }
    .container {
     width: 100%;
     padding: 10px;
@@ -229,7 +261,89 @@ hr {
  .right1 {
   float: right;
  }
+ h5{
+ float: right;
+ 
+  
+ }
+ /*animation */
+.header h5 span{
+    background: linear-gradient(#17ad3c,rgb(179, 9, 9), #2c0379);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0%;
+    font-size: 90px;
+    float: right;
+}
+.header h5 span:first-child{
+    animation: textcolor1 2s linear infinite alternate;
+}
+ .header h5 span:last-child{
+    animation: textcolor2 2s linear infinite alternate;
 
+}
+@keyframes textcolor1 {
+    0%{
+        background-size: 0%;
+    }
+      40%{
+        background-size: 100%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+@keyframes textcolor2 {
+    0%{
+        background-size: 0%;
+    }
+      40%{
+        background-size: 0%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+/*animation */
+.bamk h6  span{
+    background: linear-gradient(#021106,rgb(29, 28, 28), #2c0379);
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 0%;
+    font-size: 50px;
+}
+.bamk h6  span:first-child{
+    animation: textcolor1 2s ease-in-out infinite alternate;
+}
+ .bamk h6 span:last-child{
+    animation: textcolor2 2s ease-in-out infinite alternate;
+
+}
+@keyframes textcolor1 {
+    0%{
+        background-size: 0%;
+
+    }
+      40%{
+        background-size: 100%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
+@keyframes textcolor2 {
+    0%{
+        background-size: 0%;
+    }
+      40%{
+        background-size: 0%;
+    }
+    100%{
+        background-size: 100%;
+    }
+}
 </style>
 </head>
 <p>
@@ -243,15 +357,19 @@ hr {
 <br>
 <br>
 <br>
+
 <br>
 <br>
 <br>
-<b style="color: #680da5;">
-<big>BAMK</big> = Bryan Aman Martin Kusiga</b><br></p>
+<div class="bamk">
+<b style="color: #680da5;" >
+<h6><big><span>BAMK</span></big> 
+   <span>=BryanAman Martin Kusiga</span></b><br></p></h6>
   <hr>
-  
+</div>
   <a href="Academy logo.webp" class="logo" class="left">My Logo click here</a>
-<hr>
+
+</div>  <hr>
   <br>
  
    
