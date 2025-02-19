@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, 
   initial scale=1.0">
-  <title>BAMK VIJANA Website</title>
+  <title>Kusiga Webpage</title>
 </head>
 <style>
   *{
@@ -15,8 +15,55 @@
   .content{
     width: 100%;
     height: 100%;
-    background-image: url();
+    background-image: url("good house inside.jpg");
+    background-position: center;
+    background-size: cover;
+    position: absolute;
   }
+  .navbar{
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   padding-left: 50px;
+   padding-right: 30px;
+   padding-top: 50px;
+  }
+  nav{
+    flex: 1px;
+    text-align: right;
+
+  }
+nav ul{
+  display: inline-block;
+  list-style: none;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 70px;
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
+}
+nav ul li button{
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: green;
+  color: whitesmoke;
+  font-family: sans-serif;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: sans-serif;
+}
 </style>
 <body>
 
@@ -27,17 +74,22 @@
 </di>
 <nav>
      <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Contacts</a></li>
-          <li><button>Login</button></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><button onclick="myfunction">Login</button></li>
      </ul>
 </nav>
 </div>
 </div>
 
+<script type="text/javascript">
+function myfunction(){
+  Window.prompt("You not allowed to login, Please contact US")
+}
 
+</script>
 
 
 
