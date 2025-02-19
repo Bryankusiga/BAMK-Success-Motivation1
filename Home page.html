@@ -103,6 +103,16 @@ nav ul li{
 border-radius: 5%;
 
 }
+footer{
+      background-color: rgb(13, 13, 14);
+      width: 100%;
+      text-align: center;
+      bottom: 0px;
+      color: white;
+      padding: 3px;
+      position: fixed;
+      margin: none;
+     }
 h2{
     align-content: center;
     font-size: 50px;
@@ -162,11 +172,9 @@ h2{
   nav {
   position: fixed;
   display: inline-block;
-
-font-size: 15px;
+font-size: 11px;
   display: flex;
   align-items: center;
-
   border-bottom: 1px solid #000;
   z-index: 10;
 }
@@ -178,8 +186,9 @@ img{
   cursor: pointer;
 }
 .btn-dark{
-  background: #638491;
-  color: #fff;
+  background: #8f989c;
+  background-color: transparent;
+  color: #1459c0;
   padding: 10px 10px 10px 10px;
   border-radius: 40px;
   font-size: 11px;
@@ -231,10 +240,10 @@ img{
   .header-content {
       position: absolute;
       bottom: 0;
-      padding: 0 10%;
-      z-index: 2;
+      padding: 10%;
+      z-index: 1;
       padding-bottom: 40px;
-      background: linear-gradient(transparent, #fff);
+      background: linear-gradient(transparent, #ffffff);
   }
   .btn-contanier{
       margin: 5px 0;
@@ -282,6 +291,10 @@ img{
 
 
 </nav>
+<br>
+<br>
+<br>
+
 
 <div class="header">
   <div class="header-content">
@@ -300,8 +313,19 @@ img{
 <p>GREAT IDEAS, SMART STRATEGIES, BRIGHTER FUTURE</p>
 </div>
 <img src="BAMK graduu.jpg" class="BAMK">
-</div>
 
+
+<audio controls>
+  <source src="BAMK (2) loved 2.mp3" type="audio/mp3" class="song">
+  </audio>
+<hr>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+<br>
+</div>
 <script>
 let navbar = document.querySelector('nav');
 let menulinks = document.getElementById("menu-links");
@@ -328,7 +352,9 @@ function toogleMenu(){
   }
 </script>
 
-
+<footer>
+  &copy;Contact at:kusigabryan7@gmail.com
+</footer>
 
 </body>
 </html>
