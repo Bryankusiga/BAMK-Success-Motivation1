@@ -14,7 +14,8 @@
 <br>
   
 </head>
-<style>*{
+<style>
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -88,12 +89,17 @@ nav ul li{
   color: black;
 
 }
-.header p{
-  max-width: 360px;
-  font-weight: 500;
-}
+
+p{
+      font-weight: 900;
+      align-items: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: large;
+      font-style: italic;
+      color: #21723c;
+  }
 .BAMK{
-  width: 30%;
+  width: 100%;
   max-width: 300px;
   position: absolute;
   bottom: 0;
@@ -125,6 +131,13 @@ h2{
       font-size: large;
       font-style: italic;
   }
+  h2{
+    align-content: center;
+    font-size: 50px;
+    background: linear-gradient(rgb(24, 22, 22), #121813);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  }
 /*animation */
 .header h1 span{
   background: linear-gradient(#722121,rgb(24, 22, 22), #4919a1);
@@ -132,6 +145,7 @@ h2{
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-size: 0%;
+
 }
 .header h1 span:first-child{
   animation: textcolor1 2s linear infinite alternate;
@@ -169,6 +183,14 @@ h2{
 
 /*     Media Queries for narbaar    */
 @media only screen and (max-width: 600px) {
+  .header h1 span{
+  background: linear-gradient(#180155,rgb(163, 6, 6), #4919a1);
+  background-repeat: no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 0%;
+  position: fixed;
+}
   nav {
   position: fixed;
   display: inline-block;
@@ -232,9 +254,9 @@ img{
       width: auto;
       height: auto;
       position: relative;
-      margin-top: 100px;
+      margin-top: 10px;
       position: center;
-      padding-left: 15%;
+      padding-left: 20px;
       border-radius: 0%;
   }
   .header-content {
@@ -272,9 +294,10 @@ img{
       color: #21723c;
   }
   .header h1{
-      font-size: 50px;
+      font-size: 45px;
       padding-bottom: 100px;
-      padding-left: 30px;
+      padding-left: 3%;
+      display: fixed;
   }
 }
 </style>
@@ -298,7 +321,7 @@ img{
 
 <div class="header">
   <div class="header-content">
-  <h1><span>BAMK</span> <br><span>Academy</span></h1>
+  <h1><span>BAMK</span><br> <br><span>Academy</span></h1>
   <div class="btn-container">
     <button  class="btn-dark">Request call back
         <br>
@@ -313,8 +336,9 @@ img{
 <p>GREAT IDEAS, SMART STRATEGIES, BRIGHTER FUTURE</p>
 </div>
 <img src="BAMK graduu.jpg" class="BAMK">
-
-
+<br>
+<hr>
+<br>
 <audio controls>
   <source src="BAMK (2) loved 2.mp3" type="audio/mp3" class="song">
   </audio>
