@@ -7,10 +7,12 @@
   font-family: 'Poppins', sans-serif;
  }
  .navbar{
+  border-bottom: 2px solid;
     display: flex;
     align-items: center;
     padding-top: 50px;
     padding-right: 20px;
+   
    
  }
   nav{
@@ -46,24 +48,16 @@
     padding-right: 25px;
 
   }
-  .logo{
-    border-bottom: 2px solid;
-    
-    display: flex;
-    position: fixed;
-    padding: none;
-    margin: 0;
-    background: linear-gradient(#d3e2dd 0%, #d4c32a 49%, #dcdbff 100%); 
-  }
+  
 
   .logo10{
      width: 20%;
      height: 20%;
      border-radius: 100%;
      border: 2px solid rgb(136, 10, 10);
-     margin: 10px;
-     align-items: left;
-     float: left;
+   
+
+   
   }
   .row{
     display: flex;
@@ -78,7 +72,7 @@
    min-width: 300px;
   }
   .col-2 img{
-    max-width: 50%;
+    max-width: 100%;
     padding: 50px 0;
     
   }
