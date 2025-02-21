@@ -23,7 +23,7 @@
                 <img src="BAMK Logo company.jpg" class="logo10">
             </div>
                 <nav>
-                   <ul>
+                   <ul id="menuItems">
                        <li><a href="">Home</a></li>
                        <li><a href="">Product</a></li>
                        <li><a href="">About Us</a></li>
@@ -31,7 +31,7 @@
                        <li><a href="">Acount &#9743;</a> </li>
                    </ul>
                 </nav >
-                <p class="menu-icon">&#9776;</p>
+                <p class="menu-icon" onclick="menutoggle()">&#9776;</p>
         </div>
 
         <div class="row">  
@@ -391,8 +391,23 @@
         </div>
     </div>
 
+<!-------------js for toggle menu---------->
+      <script>
+            var menuItems = document.getElementById("menuItems");
+             
+            menuItems.style.maxHeight = "0px";
 
-
+            function menutoggle(){
+              if(menuItems.style.maxHeight == "0px")
+            {
+              menuItems.style.maxHeight = "200px"
+            }
+            else
+            {
+              menuItems.style.maxHeight = "0px"
+            }
+            }
+      </script>
 
 
 </body>
