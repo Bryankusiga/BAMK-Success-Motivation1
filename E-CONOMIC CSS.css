@@ -59,6 +59,9 @@
 
    
   }
+  .row, .col-5{
+    display: inline-block;
+  }
   .row{
     display: flex;
     align-items: center;
@@ -247,7 +250,8 @@
    background: #000;
    color: #8a8a8a;
    font-size: 14px;
-   padding: 60px 0 20px;
+   padding: 0px;
+   margin: opx;
 }
 .footer p{
   counter-reset: #8a8a8a;
@@ -299,9 +303,9 @@ ul{
     text-align: center;
     bottom: 0px;
     color: white;
-    padding: 10px;
-    position: fixed;
-    margin: none;
+    padding: 0px;
+   
+    margin: 0px;
    }
 
 .menu-icon{
