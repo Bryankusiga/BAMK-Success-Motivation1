@@ -164,6 +164,9 @@
   .col-4:hover{
     transform: translateY(5px);
   }
+  .menu-icon{
+    cursor: pointer;
+  }
   
 
 /*  --------offer------*/
