@@ -292,8 +292,18 @@ ul{
   margin: 20px o;
 }
 .copyright{
-  text-align: center;
-}
+ 
+
+    background-color: rgb(13, 13, 14);
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    margin: none;
+   }
+
 .menu-icon{
   width: 28px;
   margin-left: 20px;
