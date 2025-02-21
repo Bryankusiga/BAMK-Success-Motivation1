@@ -70,6 +70,7 @@
   .col-2{
    flex-basis: 50%;
    min-width: 300px;
+   text-wrap: wrap;
   }
   .col-2 img{
     max-width: 100%;
@@ -166,6 +167,8 @@
   }
   .menu-icon{
     cursor: pointer;
+    display: hidden;
+    margin-left: 20px;
   }
   
 
@@ -223,6 +226,7 @@
 /*-------brands-------*/
 .brands{
   margin: 100px auto;
+  inset-inline: initial;
 }
 .col-5{
   width: 160px;
@@ -295,8 +299,44 @@ ul{
   margin-left: 20px;
   display: none;
 }
+.google{
+color: #1a862c;
+font-size: 40px;
+font-style: italic;
+cursor: pointer;
 
+}
+.coca{
+  color: #ff523b;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  cursor: pointer;
+}
+.opp{
+  color: #a12802;
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  cursor: pointer;
+}
 
+.pay{
+  color: #330ac7;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  flex-direction: unset;
+  cursor: pointer;
+}
+.phi{
+  color: #7ba014;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: oblique;
+  cursor: pointer;
+ font
+}
 
 /*-----------------media query for menu-----------------*/
 @media only screen and (max-width: 800px) {
@@ -322,8 +362,15 @@ ul{
     display: block;
     cursor: pointer;
   }
-}
 
+ p{
+  text-wrap: wrap;
+  }
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+  }
+}
 
 
 /*---------media query for less than 600 screen size-------- */
@@ -334,5 +381,17 @@ ul{
     .col-2, .col-3, .col-4{
       flex-basis: 100%;
     }
+   .col-2 p{
+      text-wrap: wrap;
+      font-size: 11px;
+      
+      }
+      .col-2 small{
+        text-wrap: wrap;
+        font-size: px;
+        padding-right: 50px;
+        margin-right: 50px;
+    
+        }
 
 }
