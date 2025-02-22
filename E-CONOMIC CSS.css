@@ -405,8 +405,10 @@ cursor: pointer;
       
       }
       .col-2 small{
+        word-wrap: break-word;
         text-wrap: wrap;
         font-size: 12px;
+        overflow: hidden;
      
     
         }
