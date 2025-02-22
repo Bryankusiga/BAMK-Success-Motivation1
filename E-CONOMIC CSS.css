@@ -353,7 +353,7 @@ cursor: pointer;
 }
 
 /*-----------------media query for menu-----------------*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px){
   nav ul{
     position: absolute;
     top: 70px;
@@ -384,11 +384,15 @@ cursor: pointer;
     display: block;
     cursor: pointer;
   }
+  body{
+    padding: 0px;
+    margin: 0px;
+  }
 }
 
 
 /*---------media query for less than 600 screen size-------- */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   .row{
     text-align: center;
   }
@@ -402,9 +406,8 @@ cursor: pointer;
       }
       .col-2 small{
         text-wrap: wrap;
-        font-size: px;
-        padding-right: 50px;
-        margin-right: 50px;
+        font-size: 12px;
+     
     
         }
 
