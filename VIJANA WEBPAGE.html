@@ -7,22 +7,20 @@
   initial scale=1.0">
   <title>BAMK Vijana Website</title>
   <nav>
-    <a href="Home page.html"><img src="BAMK Logo company.jpg" class="logo10"></a>
+  <div class="logo">
+       <a href="Home page.html"><img src="BAMK Logo company.jpg" class="logo10"></a>
+  </div>
     <ul id="menu-links">
            <li><a href="Home page.html">Home </a></li>
-           <li><a href="E-CONOMIC HTML.html">Ecommerce webpage </a></li>
-           <li><a href="product.html">Products</a></li>
-           <li><a href="product details.html">Product Details</a></li>
-           <li><a href="cart.html">Cart</a></li>
-           <li><a href="account.html">Account</a></li>
            <li><a href="mailto:kusigabryan7@gmail.com"> Login </a></li>
             <li></li>
             <li></li>
      
     </ul>
-    
+    <i class="fa fa-bars"  class="menu-icon" onclick="menutoggle()"></i>
     
     </nav>
+
     <br>
     <br>
     <br>
@@ -30,7 +28,7 @@
     <br>
     <br>
   <a href="mailto:kusigabryan7@gmail.com"target="_blank">click here to view BAMK</a>
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
  <br>
  <br>
   <h4>NEWS</h4>
@@ -99,6 +97,12 @@ nav{
   border-bottom: 1px solid #000;
   z-index: 2;
 }
+.menu-icon{
+    cursor: pointer;
+    display: none;
+    margin-left: 20px;
+  }
+  
 .right1{
   float: right;
 }
@@ -175,16 +179,18 @@ box-shadow: #077007;
     padding: 0px 20px;
   }
 
+  .logo10{
+     width: 20%;
+     height: 20%;
+     border-radius: 100%;
+     border: 2px solid rgb(136, 10, 10);
+   
+
+   
+  }
     
 
-  .logo{
-  border-radius: 100px;
-  float: right;
-  padding: 5px;
-  border: 2px solid rgb(155, 155, 235);
-  text-align: center;
-  
-  }
+ 
   .box {
     background-color: #b14212;
   padding: 2%;
@@ -388,6 +394,10 @@ nav{
   margin: 0px;
   padding: 0px;
 }
+.menu-icon{
+    display: block;
+    cursor: pointer;
+  }
 .img{
   width: 10%;
   height: 10%;
