@@ -168,12 +168,7 @@
   .col-4:hover{
     transform: translateY(5px);
   }
-  .menu-icon{
-    cursor: pointer;
-    display: hidden;
-    margin-left: 20px;
-  }
-  
+
 
 /*  --------offer------*/
   .offer{
@@ -308,11 +303,12 @@ ul{
     margin: 0px;
    }
 
-.menu-icon{
-  width: 28px;
-  margin-left: 20px;
-  display: none;
-}
+   .menu-icon{
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+  }
+  
 .google{
 color: #1a862c;
 font-size: 40px;
