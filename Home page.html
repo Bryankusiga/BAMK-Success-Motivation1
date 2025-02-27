@@ -8,7 +8,10 @@
   <title>BAMK HOME PAGE</title>
   <br><br>
 
+ 
 
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <br>
 <br>
 <br>
@@ -34,6 +37,10 @@ nav{
   z-index: 10;
   background: linear-gradient(#0c6d4b 0%, #8a7e7b 49%, #aa450a 100%);
   padding: 0 10%;
+}
+nav i{
+   display: hidden;
+   cursor: pointer;
 }
 img{
   width: 10%;
@@ -178,10 +185,12 @@ h2{
       background-size: 100%;
   }
 }
-  .menu-icon{
-      width: 20%;
-      height: auto;
+ .menu-icon{
+    cursor: pointer;
+    display: hidden;
+    margin-left: 20px;
   }
+  
 
 /*     Media Queries for narbaar    */
 @media only screen and (max-width: 600px) {
@@ -302,11 +311,14 @@ img{
       padding-left: 3%;
       display: fixed;
   }
+  ul{
+    display: hidden;
+  }
 }
 </style>
 <body>
 <nav>
-<img src="Academy logo1.webp" alt="HOUSE INSIDE">
+<img src="Academy logo1.webp" >
 <ul id="menu-links">
         <li><a href="E-CONOMIC HTML.html">Ecommerce webpage </a></li>
        <li><a href="VIJANA WEBPAGE.html">Vijana webpage</a></li>
@@ -360,23 +372,18 @@ img{
 <br>
 <br>
 </div>
+
+
+
+
+
 <script>
 let navbar = document.querySelector('nav');
 let menulinks = document.getElementById("menu-links");
 
-
-
 function toogleMenu(){
        menulinks.classList.toggle('show-menu');
-
 }
-
-
-
-
-
-
-
   window.onscroll = function(){
       if(window.scrollY > 0){
              navbar.style.background = '#eefff9';
@@ -384,6 +391,32 @@ function toogleMenu(){
               navbar.style.background = 'transparent';
       }
   }
+</script>
+
+
+
+<!-------------js for toggle menu---------->
+<script>
+  var menuItems = document.getElementById("menuItems");
+   
+  menuItems.style.maxHeight = "0px";
+
+  function menutoggle(){
+    if(menuItems.style.maxHeight == "0px")
+  {
+    menuItems.style.maxHeight = "200px"
+  }
+  else
+  {
+    menuItems.style.maxHeight = "0px"
+  }
+  }
+</script>
+
+
+
+<script>
+  var menuItems = document.getElementById()
 </script>
 
 <footer>
